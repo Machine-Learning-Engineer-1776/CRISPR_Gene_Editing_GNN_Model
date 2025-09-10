@@ -13,7 +13,7 @@ Utilizes a GraphSAGE GNN with a 3-layer architecture, incorporating edge-weighte
 
 
 **Achievements and Evaluation**
-Processed 34,582 sgRNA sequences from 13059_2021_2268_MOESM4_ESM.xlsx, generating graph-based predictions for CRISPR-Cas9 editing outcomes. Fine-tuned the GraphSAGE model from supervised_edgepred.pth, achieving a test loss of 0.0024–0.0039 and an Area Under the ROC Curve (AUC) of 0.96. Validated through Springboard’s Machine Learning and AI Engineering Bootcamp, demonstrating robust model generalization and scalability for large-scale genomic data.
+Processed 34,582 sgRNA sequences from 13059_2021_2268_MOESM4_ESM.xlsx, generating graph-based predictions for CRISPR-Cas9 editing outcomes. Fine-tuned the GraphSAGE model from supervised_edgepred.pth, achieving a test loss of 0.0024–0.0039 and an Area Under the ROC Curve (AUC) of 0.96. 
 
 
 **Impact Summary**
