@@ -17,23 +17,23 @@
 
 
 
-Processed 34,582 sgRNA sequences, transforming raw data from 13059_2021_2268_MOESM4_ESM.xlsx into graph-based inputs for GNN training.
++ Processed 34,582 sgRNA sequences, transforming raw data from 13059_2021_2268_MOESM4_ESM.xlsx into graph-based inputs for GNN training.
 
 
 
-Fine-tuned GraphSAGE model from supervised_edgepred.pth, **reducing test loss by 20%** compared to baseline models.
++ Fine-tuned GraphSAGE model from supervised_edgepred.pth, **reducing test loss by 20%** compared to baseline models.
 
 
 
-**Achieved 96% AUC**, validated through Springboard’s Machine Learning and AI Engineering Bootcamp, ensuring high prediction accuracy.
++ **Achieved 96% AUC**, validated through Springboard’s Machine Learning and AI Engineering Bootcamp, ensuring high prediction accuracy.
 
 
 
-Optimized training pipeline, handling large-scale genomic datasets with 30% faster convergence than standard ML approaches.
++ Optimized training pipeline, handling large-scale genomic datasets with 30% faster convergence than standard ML approaches.
 
 
 
-**Impact Summary:** This project showcases advanced ML engineering, delivering a scalable GNN solution that accelerates CRISPR research by 30% and reduces experimental iterations by 70%. By integrating pre-trained models and large-scale genomic data, it demonstrates expertise in GNN development, data preprocessing, and model optimization. Ready for applications in gene therapy and disease modeling, this work highlights our team’s ability to drive innovation in bioinformatics, making us a top choice for cutting-edge ML engineering roles.
++ **Impact Summary:** This project showcases advanced ML engineering, delivering a scalable GNN solution that accelerates CRISPR research by 30% and reduces experimental iterations by 70%. By integrating pre-trained models and large-scale genomic data, it demonstrates expertise in GNN development, data preprocessing, and model optimization. Ready for applications in gene therapy and disease modeling, this work highlights our team’s ability to drive innovation in bioinformatics, making us a top choice for cutting-edge ML engineering roles.
 
 
 
