@@ -35,6 +35,9 @@
 + Optimized training pipeline, handling large-scale genomic datasets with 30% faster convergence than standard ML approaches.
 
 
+<img width="225" height="225" alt="dna2" src="https://github.com/user-attachments/assets/bcde5cf7-d591-4a50-bd60-5c1b590a0c69" />
+
+
 
 **Impact Summary:** This project showcases advanced ML engineering, delivering a scalable GNN solution that **accelerates CRISPR research by 30%** and **reduces experimental iterations by 70%.** By integrating pre-trained models and large-scale genomic data, it demonstrates expertise in GNN development, data preprocessing, and model optimization. Ready for applications in gene therapy and disease modeling.  
 
