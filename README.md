@@ -1,7 +1,10 @@
 # CRISPR GNN: Graph Neural Network for CRISPR Gene Editing
 
+<div align="center">
+
 ![DNA](https://github.com/user-attachments/assets/6acee24a-5272-4e4e-9352-379f1c2e7aad)
 
+</div>
 
 **Purpose & Objective:** Develop a high-precision AI solution to predict CRISPR-Cas9 gene editing outcomes, optimizing single-guide RNA (sgRNA) design for genome engineering. Leveraging a GraphSAGE-based Graph Neural Network (GNN), this project processes 34,582 sgRNA sequences from 13059_2021_2268_MOESM4_ESM.xlsx (Genome Biology, DOI: 10.1186/s13059-021-02268-4) to predict RuleSet2 scores, enhancing bioinformatics pipelines and therapeutic development.
 
