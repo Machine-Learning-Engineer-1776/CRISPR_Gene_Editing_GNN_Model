@@ -2,7 +2,8 @@
 
 <div align="center">
 
-![DNA](https://github.com/user-attachments/assets/6acee24a-5272-4e4e-9352-379f1c2e7aad)
+<img width="400" height="225" alt="Matrix Nut" src="https://github.com/user-attachments/assets/d29ae237-49fb-4320-b71c-a269fb3aca9a" />
+
 
 </div>
 
