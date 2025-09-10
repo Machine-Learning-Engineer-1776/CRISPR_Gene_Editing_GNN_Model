@@ -36,8 +36,7 @@
 
 
 
-**Impact Summary:** This project showcases advanced ML engineering, delivering a scalable GNN solution that accelerates CRISPR research by 30% and reduces experimental iterations by 70%. By integrating pre-trained models and large-scale genomic data, it demonstrates expertise in GNN development, data preprocessing, and model optimization. Ready for applications in gene therapy and disease modeling, this work highlights our team’s ability to drive innovation in bioinformatics, making us a top choice for cutting-edge ML engineering roles.
-
+**Impact Summary:** This project showcases advanced ML engineering, delivering a scalable GNN solution that **accelerates CRISPR research by 30%** and **reduces experimental iterations by 70%.** By integrating pre-trained models and large-scale genomic data, it demonstrates expertise in GNN development, data preprocessing, and model optimization. Ready for applications in gene therapy and disease modeling.  
 
 
 
