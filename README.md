@@ -1,6 +1,7 @@
 # CRISPR_Gene_Editing_GNN_Model
 
-CRISPR GNN: Graph Neural Network for CRISPR Gene Editing
+![DNA](https://github.com/user-attachments/assets/6acee24a-5272-4e4e-9352-379f1c2e7aad)
+
 
 
 **Purpose & Objective**
