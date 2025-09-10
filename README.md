@@ -34,8 +34,12 @@
 
 + Optimized training pipeline, handling large-scale genomic datasets with 30% faster convergence than standard ML approaches.
 
+
+<div align="center">
+  
 ![dna3](https://github.com/user-attachments/assets/7d784dea-e33b-4cc2-90ef-2274e3c4499d)
 
+</div>
 
 
 
