@@ -28,8 +28,7 @@
 
 
 
-+ **Achieved 96% AUC**, validated through Springboard’s Machine Learning and AI Engineering Bootcamp, ensuring high prediction accuracy.
-
++ **Achieved 96% AUC**, ensuring high prediction accuracy.
 
 
 + Optimized training pipeline, handling large-scale genomic datasets with 30% faster convergence than standard ML approaches.
