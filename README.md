@@ -1,57 +1,50 @@
-# CRISPR-GNN: Top-5 Alternate Cut Site Predictor
+# CRISPR-GNN Top-5  
+**AI-Powered Alternate Cut Site Ranking for Precision Gene Editing**
 
 <div align="center">
-<img width="400" height="225" alt="CRISPR Top-5" src="https://github.com/user-attachments/assets/d29ae237-49fb-4320-b71c-a269fb3aca9a" />
+  <img width="420" src="https://github.com/user-attachments/assets/d29ae237-49fb-4320-b71c-a269fb3aca9a" alt="CRISPR Top-5 Visualization"/>
+  <br><br>
+  <a href="https://colab.research.google.com/github/yourusername/CRISPR-Gene-Editor/blob/main/CRISPR_GNN_with_Top_5_Alternate_Cut_Sites.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+  </a>
 </div>
 
-**Purpose & Objective:**  
-Enhance CRISPR-Cas9 precision by predicting the **top-5 alternate cut sites** for each sgRNA sequence. Using a modified **GraphSAGE GNN**, this model ranks potential cut positions by **confidence score** and computes **off-target risk** (1 - confidence), enabling safer backup site selection.
+---
 
-**Dataset:**  
-- 34,582 sgRNA sequences from `13059_2021_2268_MOESM4_ESM.xlsx` (Genome Biology, DOI: 10.1186/s13059-021-02268-4)  
-- Converted into **graph structures** with one-hot encoded nucleotides (A, T, C, G)  
-- Validation on **6,917 sequences** (15% of dataset)
+## Executive Summary
+
+**CRISPR-GNN Top-5** extends the original GraphSAGE model to predict **not just one**, but the **top-5 most likely CRISPR-Cas9 cut sites** per sgRNA sequence — each with **confidence score** and **off-target risk**.
+
+This enables **safer backup site selection**, reducing reliance on primary sites and improving experimental success rates.
+
+- **34,582 sgRNA sequences** processed into graph inputs  
+- **6,917 validation sequences** analyzed in production pipeline  
+- **Top-5 confidence + risk scoring** with professional visualization  
+- **Full MLOps via MLflow**: metrics, artifacts, model tracking  
+- **Production-ready**: 5-minute end-to-end execution in Colab
 
 ---
 
-## **Model Architecture**
-- **GraphSAGE GNN** with 2 layers, 200 hidden units  
-- Input: DNA sequence → graph nodes (one-hot: 4 features)  
-- Output: **30 logits** (one per possible cut position in 30bp sequence)  
-- **Softmax → Top-5 probabilities + indices** via `torch.topk(k=5)`  
-- **Risk score** = `1 - confidence`
+## Key Features
 
----
-
-## **Key Features**
 | Feature | Implementation |
 |-------|----------------|
-| **Top-5 Cut Sites** | `torch.topk(probabilities, k=5)` |
-| **Confidence Scoring** | Softmax output per position |
-| **Risk Assessment** | `risk = 1 - confidence` |
-| **Visualization** | Bar charts with **green (>0.8), orange (0.6–0.8), red (<0.6)** |
-| **MLOps** | Full **MLflow** tracking: metrics, artifacts, parameters |
-| **Outputs** | `top5_cut_sites_predictions.csv`, PNGs, MD reports |
+| **Top-5 Cut Site Prediction** | `torch.topk(k=5)` on softmax logits |
+| **Confidence Scoring** | Per-position probability (0–1) |
+| **Off-Target Risk** | `risk = 1 - confidence` |
+| **Color-Coded Visualization** | Green (>0.8), Orange (0.6–0.8), Red (<0.6) |
+| **Batch Inference** | 32 sequences per batch (GPU-optimized) |
+| **MLflow Tracking** | Parameters, metrics, CSVs, PNGs, logs |
+| **Auto-Downloadable Outputs** | CSV, PNGs, MD reports |
 
 ---
 
-## **Results & Outputs**
-- **6,917 validation sequences** analyzed in batches of 32  
-- **34,585 total predictions** (5 per sequence)  
-- **Sample visualization** shows ranked confidence + risk  
-- **Summary heatmap** of top 10 sequences  
-- **MLflow experiment**: `CRISPR-GNN_Top5_Cut_Sites_2025`
+## Model Architecture
 
----
-
-## **Impact (Demonstrated in Code)**
-- Enables **backup cut site selection** with quantified risk  
-- Supports **safer CRISPR design** by avoiding low-confidence primary sites  
-- **Production-ready pipeline** with logging, visualization, and tracking  
-- **Clinical relevance**: Top-1 confidence >0.9 in full training (projected)
-
----
-
-## **How to Run (Colab)**
 ```python
-!pip install torch torch-geometric pandas openpyxl matplotlib seaborn mlflow
+GraphSAGE GNN
+├── Input: 30bp DNA → 30 nodes (4-dim one-hot: A,T,C,G)
+├── 2 × SAGEConv layers (200 hidden units)
+├── Global mean pooling
+├── MLP → 30 logits (one per cut position)
+└── Softmax → Top-5 probabilities + indices
