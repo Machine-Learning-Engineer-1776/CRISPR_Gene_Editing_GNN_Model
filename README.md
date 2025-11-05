@@ -1,51 +1,57 @@
-# CRISPR GNN: Graph Neural Network for CRISPR Gene Editing
+# CRISPR-GNN: Top-5 Alternate Cut Site Predictor
 
 <div align="center">
-
-<img width="400" height="225" alt="Matrix Nut" src="https://github.com/user-attachments/assets/d29ae237-49fb-4320-b71c-a269fb3aca9a" />
-
-
+<img width="400" height="225" alt="CRISPR Top-5" src="https://github.com/user-attachments/assets/d29ae237-49fb-4320-b71c-a269fb3aca9a" />
 </div>
 
-**Purpose & Objective:** Develop a high-precision AI solution to predict CRISPR-Cas9 gene editing outcomes, optimizing single-guide RNA (sgRNA) design for genome engineering. Leveraging a GraphSAGE-based Graph Neural Network (GNN), this project processes 34,582 sgRNA sequences from 13059_2021_2268_MOESM4_ESM.xlsx (Genome Biology, DOI: 10.1186/s13059-021-02268-4) to predict RuleSet2 scores, enhancing bioinformatics pipelines and therapeutic development.
+**Purpose & Objective:**  
+Enhance CRISPR-Cas9 precision by predicting the **top-5 alternate cut sites** for each sgRNA sequence. Using a modified **GraphSAGE GNN**, this model ranks potential cut positions by **confidence score** and computes **off-target risk** (1 - confidence), enabling safer backup site selection.
 
+**Dataset:**  
+- 34,582 sgRNA sequences from `13059_2021_2268_MOESM4_ESM.xlsx` (Genome Biology, DOI: 10.1186/s13059-021-02268-4)  
+- Converted into **graph structures** with one-hot encoded nucleotides (A, T, C, G)  
+- Validation on **6,917 sequences** (15% of dataset)
 
+---
 
-**GNN Model:** Employs a 3-layer GraphSAGE GNN with edge-weighted genomic interactions for supervised edge prediction. Initialized with pre-trained weights from supervised_edgepred.pth and fine-tuned on 34,582 sgRNA graphs using PyTorch Geometric on NVIDIA A100 GPUs. Achieved test loss of 0.0024–0.0039 and an Area Under the ROC Curve (AUC) of 0.96, demonstrating robust performance in predicting editing efficiency.
+## **Model Architecture**
+- **GraphSAGE GNN** with 2 layers, 200 hidden units  
+- Input: DNA sequence → graph nodes (one-hot: 4 features)  
+- Output: **30 logits** (one per possible cut position in 30bp sequence)  
+- **Softmax → Top-5 probabilities + indices** via `torch.topk(k=5)`  
+- **Risk score** = `1 - confidence`
 
+---
 
+## **Key Features**
+| Feature | Implementation |
+|-------|----------------|
+| **Top-5 Cut Sites** | `torch.topk(probabilities, k=5)` |
+| **Confidence Scoring** | Softmax output per position |
+| **Risk Assessment** | `risk = 1 - confidence` |
+| **Visualization** | Bar charts with **green (>0.8), orange (0.6–0.8), red (<0.6)** |
+| **MLOps** | Full **MLflow** tracking: metrics, artifacts, parameters |
+| **Outputs** | `top5_cut_sites_predictions.csv`, PNGs, MD reports |
 
-**Achievements and Evaluation:**
+---
 
+## **Results & Outputs**
+- **6,917 validation sequences** analyzed in batches of 32  
+- **34,585 total predictions** (5 per sequence)  
+- **Sample visualization** shows ranked confidence + risk  
+- **Summary heatmap** of top 10 sequences  
+- **MLflow experiment**: `CRISPR-GNN_Top5_Cut_Sites_2025`
 
+---
 
+## **Impact (Demonstrated in Code)**
+- Enables **backup cut site selection** with quantified risk  
+- Supports **safer CRISPR design** by avoiding low-confidence primary sites  
+- **Production-ready pipeline** with logging, visualization, and tracking  
+- **Clinical relevance**: Top-1 confidence >0.9 in full training (projected)
 
+---
 
-+ Processed 34,582 sgRNA sequences, transforming raw data from 13059_2021_2268_MOESM4_ESM.xlsx into graph-based inputs for GNN training.
-
-
-
-+ Fine-tuned GraphSAGE model from supervised_edgepred.pth, **reducing test loss by 20%** compared to baseline models.
-
-
-
-+ **Achieved 96% AUC**, ensuring high prediction accuracy.
-
-
-+ Optimized training pipeline, handling large-scale genomic datasets with 30% faster convergence than standard ML approaches.
-
-
-<div align="center">
-  
-![dna3](https://github.com/user-attachments/assets/7d784dea-e33b-4cc2-90ef-2274e3c4499d)
-
-</div>
-
-
-
-**Impact Summary:** This project showcases advanced ML engineering, delivering a scalable GNN solution that **accelerates CRISPR research by 30%** and **reduces experimental iterations by 70%.** By integrating pre-trained models and large-scale genomic data, it demonstrates expertise in GNN development, data preprocessing, and model optimization. Ready for applications in gene therapy and disease modeling.  
-
-
-
-
-
+## **How to Run (Colab)**
+```python
+!pip install torch torch-geometric pandas openpyxl matplotlib seaborn mlflow
