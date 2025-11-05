@@ -15,6 +15,9 @@
   <br><br>
 </div>
 
+<img width="2030" height="2318" alt="Top 5 Confidence Scores" src="https://github.com/user-attachments/assets/074f8b61-6f91-49e7-bdb2-0b9baf0ed88c" />
+
+
 ---
 
 ## Executive Summary
