@@ -45,3 +45,7 @@ GraphSAGE GNN
 ├── Global mean pooling
 ├── MLP → 30 logits (one per cut position)
 └── Softmax → Top-5 probabilities + indices
+
+##Model Results with 5 Alternative Cut Sites
+<img width="4170" height="2366" alt="crispr_top5_summary_analysis" src="https://github.com/user-attachments/assets/b726d548-3dff-4f6b-ba4c-f714e3e6bf39" />
+
