@@ -45,3 +45,13 @@ GraphSAGE GNN
 ├── Global mean pooling
 ├── MLP → 30 logits (one per cut position)
 └── Softmax → Top-5 probabilities + indices
+
+
+Model Results: Top-5 Alternate Cut Sites
+
+  <img width="800" src="https://github.com/user-attachments/assets/b726d548-3dff-4f6b-ba4c-f714e3e6bf39" alt="Top-5 Cut Site Confidence and Risk Analysis">
+  
+
+  Confidence (left): Green = High (>0.8), Orange = Medium (0.6–0.8), Red = Low (<0.6)
+
+  Risk (right): Red = High (>0.2), Orange = Medium (0.1–0.2), Green = Low (<0.1)
