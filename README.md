@@ -5,17 +5,8 @@
   <img width="420" src="https://github.com/user-attachments/assets/d29ae237-49fb-4320-b71c-a269fb3aca9a" alt="CRISPR Top-5 Visualization"/>
   <br><br>
 
-  <!-- RESULTS IMAGE AT TOP — ALWAYS VISIBLE -->
-  <img width="800" src="https://github.com/user-attachments/assets/b726d548-3dff-4f6b-ba4c-f714e3e6bf39" alt="Top-5 Cut Site Confidence and Risk Analysis"/>
-  <br>
-  <sub>
-    <strong>Confidence (left)</strong>: Green = High (>0.8), Orange = Medium (0.6–0.8), Red = Low (<0.6)<br>
-    <strong>Risk (right)</strong>: Red = High (>0.2), Orange = Medium (0.1–0.2), Green = Low (<0.1)
-  </sub>
-  <br><br>
-</div>
-
-<img width="2030" height="2318" alt="Top 5 Confidence Scores" src="https://github.com/user-attachments/assets/074f8b61-6f91-49e7-bdb2-0b9baf0ed88c" />
+**Top 5 Results and Confidence Scores**
+<img width="1015" height="1159" alt="Top 5 Confidence Scores" src="https://github.com/user-attachments/assets/074f8b61-6f91-49e7-bdb2-0b9baf0ed88c" />
 
 
 ---
