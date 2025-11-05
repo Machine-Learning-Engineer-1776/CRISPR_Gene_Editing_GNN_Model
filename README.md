@@ -45,3 +45,21 @@ GraphSAGE GNN
 ├── Global mean pooling
 ├── MLP → 30 logits (one per cut position)
 └── Softmax → Top-5 probabilities + indices
+
+---
+
+## Top 5 Results and Confidence Scores
+
+<div align="center">
+  <img width="800" src="https://github.com/user-attachments/assets/074f8b61-6f91-49e7-bdb2-0b9baf0ed88c" alt="Top 5 Confidence Scores"/>
+  <br>
+  <sub>
+    <strong>Confidence (left)</strong>: Green = High (>0.8), Orange = Medium (0.6–0.8), Red = Low (<0.6)<br>
+    <strong>Risk (right)</strong>: Red = High (>0.2), Orange = Medium (0.1–0.2), Green = Low (<0.1)
+  </sub>
+</div>
+
+---
+
+**Production-Ready • MLOps-Integrated • Clinically Actionable**  
+*Advancing CRISPR precision, one backup site at a time.*
