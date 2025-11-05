@@ -4,9 +4,6 @@
 <div align="center">
   <img width="420" src="https://github.com/user-attachments/assets/d29ae237-49fb-4320-b71c-a269fb3aca9a" alt="CRISPR Top-5 Visualization"/>
   <br><br>
-  <a href="https://colab.research.google.com/github/yourusername/CRISPR-Gene-Editor/blob/main/CRISPR_GNN_with_Top_5_Alternate_Cut_Sites.ipynb">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-  </a>
 </div>
 
 ---
