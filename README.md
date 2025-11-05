@@ -48,7 +48,5 @@ GraphSAGE GNN
 
 ---
 
-## Model Architecture
-## Top 5 Results and Confidence Scores
 
 
