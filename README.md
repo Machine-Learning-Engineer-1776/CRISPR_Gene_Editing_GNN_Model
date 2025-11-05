@@ -48,6 +48,6 @@ GraphSAGE GNN
 
 ---
 
-**## Top 5 Results and Confidence Scores**
+## **Top 5 Results and Confidence Scores**
 
 
