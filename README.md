@@ -51,7 +51,7 @@ GraphSAGE GNN
 ## Top 5 Results and Confidence Scores
 
 <div align="center">
-  <img width="800" src="https://github.com/user-attachments/assets/074f8b61-6f91-49e7-bdb2-0b9baf0ed88c" alt="Top 5 Confidence Scores"/>
+  <img width="420" src="https://github.com/user-attachments/assets/074f8b61-6f91-49e7-bdb2-0b9baf0ed88c" alt="Top 5 Confidence Scores"/>
   <br>
   <sub>
     <strong>Confidence (left)</strong>: Green = High (>0.8), Orange = Medium (0.6–0.8), Red = Low (<0.6)<br>
