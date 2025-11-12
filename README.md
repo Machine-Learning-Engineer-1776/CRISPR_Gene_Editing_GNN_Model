@@ -41,9 +41,9 @@ Built in **Google Colab** with **PyTorch Geometric** and **MLflow** for full exp
 
 ### 1. DNA to Graph Conversion
 
-A T C G to [1,0,0,0] to Node Features
+- A T C G to [1,0,0,0] to Node Features
 
-Adjacent bases to Bidirectional edges
+- Adjacent bases to Bidirectional edges
 
 
 ### 2. Top-5 Prediction Model
@@ -52,7 +52,8 @@ Adjacent bases to Bidirectional edges
 - Returns **top-5 indices + confidence**
 
 ### 3. Visualization
-<img width="497" height="569" alt="{70FB4009-40C9-418E-B55C-12F441A22D34}" src="https://github.com/user-attachments/assets/1a3f47b4-13e0-453d-9bc1-8aedb88baf7d" />
+<img width="499" height="567" alt="{514DA2DC-E738-434A-A7E4-5D02157DBC9F}" src="https://github.com/user-attachments/assets/9bbdbb80-c192-4183-b454-6ea71a7d30f4" />
+
 
 
 ### 4. MLflow MLOps
