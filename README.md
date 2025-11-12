@@ -109,18 +109,9 @@ Built in **Google Colab** with **PyTorch Geometric** and **MLflow** for full exp
 
 ---
 
-## What This Is *Not*
 
-- Not clinically validated
-- Not tested on real patient data
-- No real-world cost savings proven
-- No FDA clearance
+## This Project Proves:
 
----
-
-## Why This Matters
-
-This project proves:
 - You can **convert DNA to graphs**
 - You can **train GNNs on biological data**
 - You can **extend models** (single → top-5)
