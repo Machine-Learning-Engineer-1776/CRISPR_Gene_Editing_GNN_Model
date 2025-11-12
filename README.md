@@ -52,8 +52,8 @@ Adjacent bases to Bidirectional edges
 - Returns **top-5 indices + confidence**
 
 ### 3. Visualization
-![Top-5 Analysis](crispr_top5_cut_sites_analysis.png)  
-*Bar chart of confidence scores for best-performing sequence*
+<img width="497" height="569" alt="{70FB4009-40C9-418E-B55C-12F441A22D34}" src="https://github.com/user-attachments/assets/1a3f47b4-13e0-453d-9bc1-8aedb88baf7d" />
+
 
 ### 4. MLflow MLOps
 - Full experiment tracking  
