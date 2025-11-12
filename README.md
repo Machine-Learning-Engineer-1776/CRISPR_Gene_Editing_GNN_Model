@@ -42,7 +42,6 @@ Built in **Google Colab** with **PyTorch Geometric** and **MLflow** for full exp
 ### 1. DNA to Graph Conversion
 
 - A T C G to [1,0,0,0] to Node Features
-
 - Adjacent bases to Bidirectional edges
 
 
@@ -52,7 +51,7 @@ Built in **Google Colab** with **PyTorch Geometric** and **MLflow** for full exp
 - Returns **top-5 indices + confidence**
 
 ### 3. Visualization
-<img width="499" height="567" alt="{514DA2DC-E738-434A-A7E4-5D02157DBC9F}" src="https://github.com/user-attachments/assets/9bbdbb80-c192-4183-b454-6ea71a7d30f4" />
+<img width="250" height="284" alt="{514DA2DC-E738-434A-A7E4-5D02157DBC9F}" src="https://github.com/user-attachments/assets/9bbdbb80-c192-4183-b454-6ea71a7d30f4" />
 
 
 
